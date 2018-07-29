@@ -106,4 +106,4 @@ def ethiopia_multiplication():
     print("The result is {}".format(sum(keep_list)))
 
 # 실행     
-ethiopia_multiplication()
+# ethiopia_multiplication()
