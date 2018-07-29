@@ -64,15 +64,6 @@ def ethiopia_multiplication():
     inData = inData.split(" ")
     inDataCnt = len(inData)
     
-#     print(inData)
-#     print(inDataCnt)
-    
-    # 숫자유무체크
-#     for _i in inData:
-#         if type(_i) != int:
-#             print('숫자는 정수만 입력해 주세요.')
-#             ethiopia_multiplication()  
-    
     # 숫자2개유무체크
     if inDataCnt != 2:
         print('숫자는 2개만 입력해 주세요.')
@@ -90,8 +81,6 @@ def ethiopia_multiplication():
     tmp_checklist = []
     getCheckNum(bigNum,tmp_checklist)
     tmp_checklist
-    
-#     print(tmp_checklist)
 
     # 작은수 배수 list 가져오기
     tmp_list = []
@@ -100,8 +89,7 @@ def ethiopia_multiplication():
         tmp_row_list = []
         tmp_row_list.append(plusNum)
         tmp_row_list.append(smallNum)
-        tmp_list.append(tmp_row_list)          
-        remainNum = bigNum - plusNum
+        tmp_list.append(tmp_row_list)  
         plusNum = plusNum * 2
         smallNum= smallNum * 2 # 작은수는 2배 증가       
         if plusNum > bigNum:
